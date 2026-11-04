@@ -6,7 +6,7 @@ Version 1.0 • Date: 2026-11-04
 | ----------------------------------- | --------------------------------------------------- | ----------- |
 | `lab02/app-classification.md`       | Classification of 5 everyday applications           | Team        |
 | `lab02/app-quadrant.md`             | Mermaid timing vs availability quadrant chart       | Team        |
-| `lab02/adr-001-application-type.md` | Architecture Decision Record for ITC Club Hub       | Team        |
+| `lab02/adr-001-application-type.md` | Architecture Decision Record for ITC Club Hub       | Techsamnang Monyrak        |
 | `lab02/quality-scenarios.md`        | Six quality attribute scenarios and risk priorities | Team        |
 | `lab02/context-diagram.md`          | Black-box context diagram for Club Hub              | Team        |
 | `lab02/architecture.md`             | Three-tier architecture structure and mapping       | Team        |
