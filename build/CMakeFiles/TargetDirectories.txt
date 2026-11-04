@@ -1,0 +1,4 @@
+C:/Users/MSI/itc-club-hub/build/CMakeFiles/clubhub_core.dir
+C:/Users/MSI/itc-club-hub/build/CMakeFiles/clubhub.dir
+C:/Users/MSI/itc-club-hub/build/CMakeFiles/edit_cache.dir
+C:/Users/MSI/itc-club-hub/build/CMakeFiles/rebuild_cache.dir
