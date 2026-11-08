@@ -14,7 +14,7 @@ EventLoadResult loadEventsCsv(std::istream& in) {
     while (std::getline(in, line)) {
         ++lineNo;
         if (!line.empty() && line.back() == '\r') {
-            line.pop_back(); // លុប '\r' ករណី file នៅលើ Windows
+            line.pop_back();
         }
 
         std::stringstream ss(line);

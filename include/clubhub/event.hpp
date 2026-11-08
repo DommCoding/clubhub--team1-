@@ -8,8 +8,7 @@ using TimePoint = std::chrono::sys_time<std::chrono::minutes>;
 
 class Event {
 public:
-    Event(std::string id, std::string title, TimePoint start,
-          std::string location, int capacity);
+    Event(std::string id, std::string title, TimePoint start,std::string location, int capacity);
 
     const std::string& id() const noexcept { return id_; }
     const std::string& title() const noexcept { return title_; }
@@ -28,5 +27,7 @@ private:
 };
 
 TimePoint parseTimePoint(const std::string& text);
+
+std::string formatTimePoint(TimePoint t);
 
 } // namespace clubhub

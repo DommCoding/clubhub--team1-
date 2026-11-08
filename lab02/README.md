@@ -13,7 +13,7 @@ Lab-02 · System Design (v1.0, 2026-11-08)
 |`lab02/architecture.mmd`	    |PNG export of the three-tier architecture diagram.	            |Tim Rommnea|
 |`lab02/architecture.png`	    |PNG export of the three-tier architecture diagram.	            |Tim Rommnea|
 |`lab02/challenge/offline-checkin.md`	|Implements the event management core.	                        |Pres Samchara|
-|`lab02/README.md`	            |Documents Lab-02 files, reused inputs, diagrams, and changes.	|Tim Rommnea|
+|`lab02/README.md`	            |Documents Lab-02 files, reused inputs, diagrams, and changes.	|Tim Rommnea, Chea Sovannareach, Techsamnang Monyrak |
 |`include/clubhub/event.hpp  `	|Implements the event management core.	                        |Chea Sovannareach|
 |`include/clubhub/event_csv.hpp`	        |Implements the list-events command-line interface.	            |Chea Sovannareach|
 |`include/clubhub/queued_checkin.hpp `	            |Documents Lab-02 files, reused inputs, diagrams, and changes.	|Tim Rommnea|
@@ -25,8 +25,8 @@ Lab-02 · System Design (v1.0, 2026-11-08)
 
 |Lab-01 File             |Version / Commit Hash	|How It Was Used                                            |
 |:----------------------|:----------------------|:----------------------------------------------------------|
-|`lab01/team-charter.md`	|[Version / Hash]   	|Used as a reference for team roles and responsibilities.   |
-|`lab01/decisions.md`	    |[Version / Hash]	    |Used as a reference for previous project decisions.        |
+|`lab01/team-charter.md`	|3265603       	|Used as a reference for team roles and responsibilities.   |
+|`lab01/decisions.md`	    |3265603	    |Used as a reference for previous project decisions.        |
 
 1. Diagrams
 
@@ -48,4 +48,4 @@ Presentation, Logic, and Data.
 
 |Date	|Version	|Changes     |Authors   |
 |:------|:----------|:----------------------------------------------------------|:----------------|
-|2026-11-08	|1.0	|Completed Lab-02 documentation, system diagrams, event core, and list-events CLI.	|[Team members]|
+|2026-11-08	|1.0	|Completed Lab-02 documentation, system diagrams, event core, and list-events CLI.	|Everyone|
