@@ -1,0 +1,37 @@
+flowchart TB
+subgraph P[Presentation]
+    PWA[PWA<br/>Students and Organisers<br/>Modelled only]
+    WEB[Responsive Web App<br/>Administrators<br/>Modelled only]
+    CLI[C++ CLI<br/>src/cli/main.cpp<br/>Implemented this semester]
+end
+
+subgraph L[Logic]
+    API[HTTP API<br/>Future]
+    RS[RegistrationService<br/>include/clubhub/ and src/]
+    ES[EventService<br/>include/clubhub/ and src/]
+end
+
+subgraph D[Data]
+    CSV[(CSV Files<br/>data/)]
+    DB[(Database later)]
+end
+
+MAIL[[E-mail service]]
+DIR[[ITC student directory]]
+
+PWA -.->|Future API calls| API
+WEB -.->|Future API calls| API
+
+CLI --> RS
+CLI --> ES
+
+API -.-> RS
+API -.-> ES
+
+RS --> CSV
+ES --> CSV
+
+CSV -.->|Future migration| DB
+
+RS -->|Confirmation and reminders| MAIL
+RS -->|Student ID lookup| DIR
