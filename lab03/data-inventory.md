@@ -1,5 +1,5 @@
 # Data inventory · ITC Club Hub
-Version 0.1 · 2026-11-18 · Authors: <TSMonyrak>
+Version 0.1 · 2026-11-18 · Authors: TSMonyrak
 
 | Field | Subject | Purpose | Legal basis / consent | Retention | Who can see it | Stored in | Decision |
 |-------|---------|---------|-----------------------|-----------|----------------|-----------|----------|
@@ -31,4 +31,4 @@ flowchart LR
   C["Collect only after explicit SMS opt-in"] --> S["Store in phone column, data/students.csv"]
   S --> U["Use for 24h event reminder sender only"]
   U --> SH["Share with SMS gateway provider, nobody else"]
-  SH --> D["Delete immediately on
+  SH --> D["Delete immediately onN
