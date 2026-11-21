@@ -1,0 +1,14 @@
+flowchart LR
+    Start["clubhub register / web form"] --> Notice["Show one-line privacy notice + link to full notice"]
+    Notice --> Input["Enter required studentId, name, email"]
+    Input --> EmailOpt{"Email reminders? (default: no)"}
+    EmailOpt -- "no / skip" --> EmailOff["Keep email reminders off (false)"]
+    EmailOpt -- "yes" --> EmailOn["setEmailReminders(true)"]
+    EmailOff --> SmsOpt{"SMS reminders? (default: no)"}
+    EmailOn --> SmsOpt
+    SmsOpt -- "no / skip" --> SmsOff["Keep phone unset (std::nullopt)"]
+    SmsOpt -- "yes" --> PhoneIn["Prompt for phone number"]
+    PhoneIn --> GiveSms["giveSmsConsent(phone)"]
+    SmsOff --> Created["Account created (works even if all optional consents declined)"]
+    GiveSms --> Created
+    Created -. "Later: withdraw SMS consent" .-> Withdraw["withdrawSmsConsent() -> erase phone immediately"]
