@@ -1,7 +1,7 @@
 # ITC Club Hub Privacy Notice
 
 ## Who we are
-We are ITC Club Hub. We help students register for events and manage club memberships.
+We are Clubhub Team1. We help students register for events and manage club memberships.
 
 ## What we collect and why
 
@@ -21,4 +21,5 @@ Email reminders are turned off by default. SMS reminders and the gender survey a
 
 ## Contact
 
-If you have questions about your personal information, please contact the ITC clubs office, which is responsible for managing your data.
+If you have questions about your personal information, please Email us at `privacy@itcclubhub.edu`, which is responsible for managing your data.
+
