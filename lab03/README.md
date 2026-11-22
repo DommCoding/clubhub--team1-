@@ -9,7 +9,7 @@
 | `lab03/licence-decision.md` | 3 | new |Keo Maknioddom|
 | `lab03/accessibility-checklist.md` | 4 | new |Techsamnang Monyrak|
 | `lab03/cli-output-rules.md` | 4 | new |Techsamnang Monyrak|
-| `lab03/ethics-cases.md` | 5 | new |Pres Samchara & Tim Rommnea|
+| `lab03/ethics-cases.md` | 5 | new |Techsamnang Monyrak & Tim Rommnea|
 | `lab03/README.md` | 5 | new |Tim Rommnea|
 | `lab03/ai-feature-proposal.md ` | Challenge | new |Tim Rommnea|
 | `LICENSE`  | 3 | new |Keo Maknioddom|
