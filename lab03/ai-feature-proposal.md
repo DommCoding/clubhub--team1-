@@ -35,9 +35,9 @@ No new fields are added to `Student.h`. However, the *Purpose* column for attend
 
 | Risk | Who is harmed | Mitigation | Fairness check (metric, threshold) |
 | :--- | :--- | :--- | :--- |
-| **1. Cold-start problem** | First-year students with zero attendance history | Fall back entirely to the non-personalised baseline ("Popular this week") until 3 events are attended. | Share of recommendations served to first-year students matches their proportion of active users (threshold: $\ge$ 90% parity). |
-| **2. Popularity feedback loop** | Small clubs (e.g., Chess Club) get buried beneath large clubs (e.g., Tech Club) | Inject a mandatory exploration quota: at least 2 out of 5 recommendation slots must feature clubs the student has never interacted with. | Small clubs with <20 members receive at least 80% of their fair share of total campus impressions. |
-| **3. Proxy discrimination** | Students with rigid academic timetables or part-time jobs are penalised for missing evening events | Exclude event timestamps from ranking weights; base affinity purely on club category tags rather than time slots. | Recommendation variance across student faculties/departments must not deviate by >15%. |
+| **1. Cold-start problem** | First-year students with zero attendance history | Fall back entirely to the non-personalised baseline ("Popular this week") until 3 events are attended. | Share of recommendations served to first-year students matches their proportion of active users (threshold: >= 90% parity). |
+| **2. Popularity feedback loop** | Small clubs (e.g., Chess Club) get buried beneath large clubs (e.g., Tech Club) | Inject a mandatory exploration quota: at least 2 out of 5 recommendation slots must feature clubs the student has never interacted with. | Small clubs with fewer than 20 members receive at least 80% of their fair share of total campus impressions. |
+| **3. Proxy discrimination** | Students with rigid academic timetables or part-time jobs are penalised for missing evening events | Exclude event timestamps from ranking weights; base affinity purely on club category tags rather than time slots. | Recommendation variance across student faculties/departments must not deviate by more than 15%. |
 | **4. Echo chamber effect** | Students get locked into a single club category | Diversify recommendation tags so that no single category occupies more than 60% of the recommendation widget. | Maximum single-category concentration cap of 60% per student profile. |
 
 ---
@@ -73,3 +73,18 @@ flowchart TD
     C --> F["Switch toggled off by student"]
     E --> F
     F --> G["Immediately wipe cached affinity profile data within 24 hours"]
+```
+
+---
+
+## 6. Recommendation
+
+**Decision:** **GO WITH CONDITIONS**  
+*Implementation timeline:* Defer until Sprint 2, and deploy only after the non-personalised baseline has been live and stable for at least one month.
+
+### Conditions
+1. **Opt-in requirement:** The feature must remain turned off by default. Toggling it off must purge all derived user profile vectors within 24 hours.
+2. **Strict data minimization:** Use exclusively attendance logs and club memberships from the past 12 months. Phone numbers, email addresses, and free-text fields are strictly prohibited from the recommendation model.
+3. **Exploration quota:** Exactly 2 out of the 5 recommendation slots must feature clubs the student has never attended to break feedback loops.
+4. **Fairness monitoring:** Small clubs with fewer than 20 members must receive at least 80% of their proportional share of student impressions.  
+   *Owner of the fairness check:* The Clubs Office Administrator.
