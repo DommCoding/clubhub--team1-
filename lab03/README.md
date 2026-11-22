@@ -11,7 +11,7 @@
 | `lab03/cli-output-rules.md` | 4 | new |Techsamnang Monyrak|
 | `lab03/ethics-cases.md` | 5 | new |Techsamnang Monyrak & Tim Rommnea|
 | `lab03/README.md` | 5 | new |Tim Rommnea|
-| `lab03/ai-feature-proposal.md ` | Challenge | new |Tim Rommnea|
+| `lab03/ai-feature-proposal.md ` | Challenge | new |Techsamnang Monyrak|
 | `LICENSE`  | 3 | new |Keo Maknioddom|
 | `THIRD_PARTY_NOTICES.md `  | 3 | new |Keo Maknioddom|
 | `licenses/googletest-LICENSE.txt`  | 3 | new |Keo Maknioddom|
