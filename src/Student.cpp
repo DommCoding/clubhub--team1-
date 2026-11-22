@@ -52,8 +52,8 @@ std::string maskId(std::string_view id) {
     }
 
     return std::string(id.substr(0, 2))
-           + std::string(id.size() - 3, '*')
+           + std::string(id.size() - 2, '*')
            + std::string(id.substr(id.size() - 1));
 }
 
-} 
+}
